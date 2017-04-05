@@ -20,6 +20,14 @@ namespace ProtoGuess
         Dictionary<string, float> ESP03 = new Dictionary<string, float>();
         Dictionary<string, float> ESP04 = new Dictionary<string, float>();
 
+        string closest;
+
+        string ESP01Guess = "";
+        string ESP02Guess = "";
+        string ESP03Guess = "";
+        string ESP04Guess = "";
+
+
         public Form1()
         {
             InitializeComponent();
@@ -155,9 +163,71 @@ namespace ProtoGuess
             portToUse.Open();            
             //portToUse.Close();
         }
-        void logData(string data)
+        void logData(string dataESP)
         {
+            string[] splitData = dataESP.Split('-');
+            switch (splitData[0])
+            {
+                case "ESP01":
+                    ESP01Guess = closestMatch(ESP01, float.Parse(splitData[1]));
+                    esp01GuessText.Invoke(new MethodInvoker(delegate { esp01GuessText.Text = ESP01Guess; }));
+                    break;
+
+                case "ESP02":
+                    ESP02Guess = closestMatch(ESP02, float.Parse(splitData[1]));
+                    esp02GuessText.Invoke(new MethodInvoker(delegate { esp01GuessText.Text = ESP02Guess; }));
+                    break;
+
+                case "ESP03":
+                    ESP03Guess = closestMatch(ESP03, float.Parse(splitData[1]));
+                    esp03GuessText.Invoke(new MethodInvoker(delegate { esp03GuessText.Text = ESP01Guess; }));
+                    break;
+
+                case "ESP04":
+                    ESP04Guess = closestMatch(ESP04, float.Parse(splitData[1]));
+                    esp04GuessText.Invoke(new MethodInvoker(delegate { esp04GuessText.Text = ESP01Guess; }));
+                    break;
+            }
+
+
 
         }
+        string closestMatch(Dictionary<string,float> dict, float rssi)
+        {
+            float diff = 0;
+            closest = "";
+
+            foreach (KeyValuePair<string, float> entry in dict)
+            {
+                if (entry.Value != 0)
+                {
+                    float tempDiff = Math.Abs(entry.Value - rssi);
+                    if (tempDiff < diff || diff == 0)
+                    {
+                        diff = tempDiff;
+                        closest = entry.Key;
+                    }
+                }
+            }
+            return closest;
+        }
+
+        private void guessButton_Click(object sender, EventArgs e)
+        {
+            portToUse.WriteLine("scan");
+            ESP01Guess = "";
+            ESP02Guess = "";
+            ESP03Guess = "";
+            ESP04Guess = "";
+
+
+            esp01GuessText.Invoke(new MethodInvoker(delegate { esp01GuessText.Text = ""; }));
+            esp02GuessText.Invoke(new MethodInvoker(delegate { esp02GuessText.Text = ""; }));
+            esp03GuessText.Invoke(new MethodInvoker(delegate { esp03GuessText.Text = ""; }));
+            esp04GuessText.Invoke(new MethodInvoker(delegate { esp04GuessText.Text = ""; }));
+
+
+        }
+
     }
 }

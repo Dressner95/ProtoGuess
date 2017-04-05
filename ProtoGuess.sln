@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoGuess", "ProtoGuess\ProtoGuess.csproj", "{0DB80C38-B91D-4031-9847-4F1AAD7DD94A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESPTool", "..\ESPTool\ESPTool\ESPTool.csproj", "{F586063A-F0F4-4F7A-8856-43F0976BF09D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0DB80C38-B91D-4031-9847-4F1AAD7DD94A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DB80C38-B91D-4031-9847-4F1AAD7DD94A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DB80C38-B91D-4031-9847-4F1AAD7DD94A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F586063A-F0F4-4F7A-8856-43F0976BF09D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F586063A-F0F4-4F7A-8856-43F0976BF09D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F586063A-F0F4-4F7A-8856-43F0976BF09D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F586063A-F0F4-4F7A-8856-43F0976BF09D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

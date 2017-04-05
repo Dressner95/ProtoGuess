@@ -31,120 +31,152 @@ namespace ProtoGuess
         public ProtoGuess()
         {
             InitializeComponent();
-            ESP01.Add("Chairs",0);
+            //ESP01.Add("Chairs",0);
 
-            ESP01.Add("237-01", 0);
-            ESP01.Add("237-02", 0);
-            ESP01.Add("237-03", 0);
+            ESP01.Add("230P", 84.8f);
 
-            ESP01.Add("238-01", 0);
-            ESP01.Add("238-02", 0);
-            ESP01.Add("238-03", 95);
+            ESP01.Add("230O", 75.8f);
 
-            ESP01.Add("203", 0);
+            ESP01.Add("230N", 80f);
 
-            ESP01.Add("239-01", 89);
-            ESP01.Add("239-02", 90);
+            ESP01.Add("230M", 76f);
 
-            ESP01.Add("240-01", 90.8f);
-            ESP01.Add("240-02", 86.8f);
+            ESP01.Add("230L", 74.4f);
 
-            ESP01.Add("241-01", 85.8f);
-            ESP01.Add("241-02", 84.2f);
-            ESP01.Add("241-03", 85.8f);
+            ESP01.Add("230K", 79.4f);
 
-            ESP01.Add("242-01", 86.6f);
-            ESP01.Add("242-02", 85.4f);
-            ESP01.Add("242-03", 92f);
+            ESP01.Add("230J", 74.4f);
 
-            ESP01.Add("Elevator", 0f);
+            ESP01.Add("230I", 62f);
+
+            ESP01.Add("230H", 72f);
+
+            ESP01.Add("230G", 68.2f);
+
+            ESP01.Add("230E", 49.4f);
+
+            ESP01.Add("230D", 49.4f);
+
+            ESP01.Add("230C", 41.8f);
+
+            ESP01.Add("230B", 34.6f);
+
+            ESP01.Add("230F", 60.4f);
+
+            ESP01.Add("230-KITCHEN", 42.8f);
+
+
+
+
 
             //ESP02
-            ESP02.Add("Chairs", 75.2f);
+            ESP02.Add("230P", 68.6f);
 
-            ESP02.Add("237-01", 80f);
-            ESP02.Add("237-02", 84.4f);
-            ESP02.Add("237-03", 82.6f);
+            ESP02.Add("230O", 61.2f);
 
-            ESP02.Add("238-01", 89f);
-            ESP02.Add("238-02", 95.8f);
-            ESP02.Add("238-03", 90.4f);
+            ESP02.Add("230N",66f);
 
-            ESP02.Add("203", 0);
+            ESP02.Add("230M", 69.3f);
 
-            ESP02.Add("239-01", 0);
-            ESP02.Add("239-02", 0);
+            ESP02.Add("230L", 68f);
 
-            ESP02.Add("240-01", 0f);
-            ESP02.Add("240-02", 0f);
+            ESP02.Add("230K", 70.2f);
 
-            ESP02.Add("241-01", 0f);
-            ESP02.Add("241-02", 0f);
-            ESP02.Add("241-03", 0f);
+            ESP02.Add("230J", 71.2f);
 
-            ESP02.Add("242-01", 0f);
-            ESP02.Add("242-02", 0f);
-            ESP02.Add("242-03", 0f);
+            ESP02.Add("230I", 77.4f);
 
-            ESP02.Add("Elevator", 87.2f);
+            ESP02.Add("230H", 77.6f);
+
+            ESP02.Add("230G", 82f);
+
+            ESP02.Add("230E", 83.6f);
+
+            ESP02.Add("230D", 82.8f);
+
+            ESP02.Add("230C", 86f);
+
+            ESP02.Add("230B", 88.6f);
+
+            ESP02.Add("230F", 87.2f);
+
+            ESP02.Add("230-KITCHEN", 90.4f);
 
             //ESP03
-            ESP03.Add("Chairs", 78.4f);
+            ESP03.Add("230P", 0f);
 
-            ESP03.Add("237-01", 75.3f);
-            ESP03.Add("237-02", 74.8f);
-            ESP03.Add("237-03", 69f);
+            ESP03.Add("230O", 0f);
 
-            ESP03.Add("238-01", 72.8f);
-            ESP03.Add("238-02", 72.2f);
-            ESP03.Add("238-03", 73.8f);
+            ESP03.Add("230N", 0f);
 
-            ESP03.Add("203", 67.4f);
+            ESP03.Add("230M", 0f);
 
-            ESP03.Add("239-01", 64.8f);
-            ESP03.Add("239-02", 63.4f);
+            ESP03.Add("230L", 0f);
 
-            ESP03.Add("240-01", 65f);
-            ESP03.Add("240-02", 59.4f);
+            ESP03.Add("230K", 0f);
 
-            ESP03.Add("241-01", 57.8f);
-            ESP03.Add("241-02", 60.4f);
-            ESP03.Add("241-03", 56.6f);
+            ESP03.Add("230J", 0f);
 
-            ESP03.Add("242-01", 43.6f);
-            ESP03.Add("242-02", 31f);
-            ESP03.Add("242-03", 45.2f);
+            ESP03.Add("230I", 0f);
 
-            ESP03.Add("Elevator", 84f);
+            ESP03.Add("230H", 0f);
+
+            ESP03.Add("230G", 0f);
+
+            ESP03.Add("230E", 0f);
+
+            ESP03.Add("230D", 0f);
+
+            ESP03.Add("230C", 93f);
+
+            ESP03.Add("230B", 0f);
+
+            ESP03.Add("230F", 87.2f);
+
+            ESP03.Add("230-KITCHEN", 90.4f);
 
             //ESP04
-            ESP04.Add("Chairs", 51.4f);
+            ESP04.Add("230P", 89.8f);
 
-            ESP04.Add("237-01", 57f);
-            ESP04.Add("237-02", 65.6f);
-            ESP04.Add("237-03", 64.4f);
+            ESP04.Add("230O", 75f);
 
-            ESP04.Add("238-01", 71.4f);
-            ESP04.Add("238-02", 78f);
-            ESP04.Add("238-03", 81.6f);
+            ESP04.Add("230N", 75.2f);
 
-            ESP04.Add("203", 83.6f);
+            ESP04.Add("230M", 95.2f);
 
-            ESP04.Add("239-01", 85f);
-            ESP04.Add("239-02", 82.8f);
+            ESP04.Add("230L", 84f);
 
-            ESP04.Add("240-01", 85.2f);
-            ESP04.Add("240-02", 89.4f);
+            ESP04.Add("230K", 91.6f);
 
-            ESP04.Add("241-01", 90.4f);
-            ESP04.Add("241-02", 86.2f);
-            ESP04.Add("241-03", 91.8f);
+            ESP04.Add("230J", 94.2f);
 
-            ESP04.Add("242-01", 89.6f);
-            ESP04.Add("242-02", 92.4f);
-            ESP04.Add("242-03", 94.4f);
+            ESP04.Add("230I", 0f);
 
-            ESP04.Add("Elevator", 78.2f);
+            ESP04.Add("230H", 97.8f);
+
+            ESP04.Add("230G", 0f);
+
+            ESP04.Add("230E", 0f);
+
+            ESP04.Add("230D", 0f);
+
+            ESP04.Add("230C", 0f);
+
+            ESP04.Add("230B", 0f);
+
+            ESP04.Add("230F", 0f);
+
+            ESP04.Add("230-KITCHEN", 0f);
+
+        }
+
+        private void connect(object sender, EventArgs e)
+        {
+            connectButton.BackColor = Color.LawnGreen;
+            portToUse = new SerialPort(comPort.Text, 115200, Parity.None, 8, StopBits.One);
+            portToUse.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
+            portToUse.Open();
+            //portToUse.Close();
         }
 
         private void DataReceivedHandler(object sender, SerialDataReceivedEventArgs e)
@@ -155,14 +187,7 @@ namespace ProtoGuess
             Debug.Print(indata);
         }
 
-        private void connect(object sender, EventArgs e)
-        {
-            connectButton.BackColor = Color.LawnGreen;
-            portToUse = new SerialPort(comPort.Text, 115200, Parity.None, 8, StopBits.One);
-            portToUse.DataReceived += new SerialDataReceivedEventHandler(DataReceivedHandler);
-            portToUse.Open();            
-            //portToUse.Close();
-        }
+        
         void logData(string dataESP)
         {
             string[] splitData = dataESP.Split('-');
@@ -171,21 +196,25 @@ namespace ProtoGuess
                 case "ESP01":
                     ESP01Guess = closestMatch(ESP01, float.Parse(splitData[1]));
                     esp01GuessText.Invoke(new MethodInvoker(delegate { esp01GuessText.Text = ESP01Guess; }));
+                    Debug.Print("01 Found");
                     break;
 
                 case "ESP02":
                     ESP02Guess = closestMatch(ESP02, float.Parse(splitData[1]));
                     esp02GuessText.Invoke(new MethodInvoker(delegate { esp01GuessText.Text = ESP02Guess; }));
+                    Debug.Print("02 Found");
                     break;
 
                 case "ESP03":
                     ESP03Guess = closestMatch(ESP03, float.Parse(splitData[1]));
-                    esp03GuessText.Invoke(new MethodInvoker(delegate { esp03GuessText.Text = ESP01Guess; }));
+                    esp03GuessText.Invoke(new MethodInvoker(delegate { esp03GuessText.Text = ESP03Guess; }));
+                    Debug.Print("03 Found");
                     break;
 
                 case "ESP04":
                     ESP04Guess = closestMatch(ESP04, float.Parse(splitData[1]));
-                    esp04GuessLabel.Invoke(new MethodInvoker(delegate { esp04GuessLabel.Text = ESP01Guess; }));
+                    esp04GuessLabel.Invoke(new MethodInvoker(delegate { esp04GuessLabel.Text = ESP04Guess; }));
+                    Debug.Print("04 Found");
                     break;
             }
 
@@ -214,7 +243,8 @@ namespace ProtoGuess
 
         private void guessButton_Click(object sender, EventArgs e)
         {
-            portToUse.WriteLine("scan");
+            portToUse.Write("scan");
+            Debug.Print("scanning");
             ESP01Guess = "";
             ESP02Guess = "";
             ESP03Guess = "";
@@ -224,7 +254,7 @@ namespace ProtoGuess
             esp01GuessText.Invoke(new MethodInvoker(delegate { esp01GuessText.Text = ""; }));
             esp02GuessText.Invoke(new MethodInvoker(delegate { esp02GuessText.Text = ""; }));
             esp03GuessText.Invoke(new MethodInvoker(delegate { esp03GuessText.Text = ""; }));
-            esp04GuessLabel.Invoke(new MethodInvoker(delegate { esp04GuessLabel.Text = ""; }));
+            esp04GuessText.Invoke(new MethodInvoker(delegate { esp04GuessText.Text = ""; }));
 
 
         }

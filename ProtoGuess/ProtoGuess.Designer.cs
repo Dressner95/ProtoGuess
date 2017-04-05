@@ -1,6 +1,6 @@
 ﻿namespace ProtoGuess
 {
-    partial class Form1
+    partial class ProtoGuess
     {
         /// <summary>
         /// Required designer variable.
@@ -37,11 +37,11 @@
             this.esp01GuessText = new System.Windows.Forms.TextBox();
             this.esp02GuessText = new System.Windows.Forms.TextBox();
             this.esp03GuessText = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.esp04GuessText = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.esp04GuessText = new System.Windows.Forms.Label();
+            this.esp04GuessLabel = new System.Windows.Forms.Label();
             this.serialPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,66 +123,66 @@
             this.esp03GuessText.Size = new System.Drawing.Size(130, 22);
             this.esp03GuessText.TabIndex = 4;
             // 
-            // textBox4
+            // esp04GuessText
             // 
-            this.textBox4.Location = new System.Drawing.Point(334, 167);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(130, 22);
-            this.textBox4.TabIndex = 5;
+            this.esp04GuessText.Location = new System.Drawing.Point(334, 167);
+            this.esp04GuessText.Name = "esp04GuessText";
+            this.esp04GuessText.Size = new System.Drawing.Size(130, 22);
+            this.esp04GuessText.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(476, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 17);
+            this.label3.Size = new System.Drawing.Size(96, 17);
             this.label3.TabIndex = 6;
-            this.label3.Text = "espGuess01";
+            this.label3.Text = "ESP01 Guess";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(476, 69);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 17);
+            this.label4.Size = new System.Drawing.Size(96, 17);
             this.label4.TabIndex = 7;
-            this.label4.Text = "espGuess02";
+            this.label4.Text = "ESP02 Guess";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(476, 121);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 17);
+            this.label5.Size = new System.Drawing.Size(96, 17);
             this.label5.TabIndex = 8;
-            this.label5.Text = "espGuess03";
+            this.label5.Text = "ESP03 Guess";
             // 
-            // esp04GuessText
+            // esp04GuessLabel
             // 
-            this.esp04GuessText.AutoSize = true;
-            this.esp04GuessText.Location = new System.Drawing.Point(476, 175);
-            this.esp04GuessText.Name = "esp04GuessText";
-            this.esp04GuessText.Size = new System.Drawing.Size(88, 17);
-            this.esp04GuessText.TabIndex = 9;
-            this.esp04GuessText.Text = "espGuess03";
+            this.esp04GuessLabel.AutoSize = true;
+            this.esp04GuessLabel.Location = new System.Drawing.Point(476, 175);
+            this.esp04GuessLabel.Name = "esp04GuessLabel";
+            this.esp04GuessLabel.Size = new System.Drawing.Size(96, 17);
+            this.esp04GuessLabel.TabIndex = 9;
+            this.esp04GuessLabel.Text = "ESP04 Guess";
             // 
-            // Form1
+            // ProtoGuess
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(577, 201);
-            this.Controls.Add(this.esp04GuessText);
+            this.Controls.Add(this.esp04GuessLabel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.esp04GuessText);
             this.Controls.Add(this.esp03GuessText);
             this.Controls.Add(this.esp02GuessText);
             this.Controls.Add(this.esp01GuessText);
             this.Controls.Add(this.guessButton);
             this.Controls.Add(this.serialPanel);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "ProtoGuess";
+            this.Text = "Location Guesser";
             this.serialPanel.ResumeLayout(false);
             this.serialPanel.PerformLayout();
             this.ResumeLayout(false);
@@ -201,11 +201,11 @@
         private System.Windows.Forms.TextBox esp01GuessText;
         private System.Windows.Forms.TextBox esp02GuessText;
         private System.Windows.Forms.TextBox esp03GuessText;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox esp04GuessText;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label esp04GuessText;
+        private System.Windows.Forms.Label esp04GuessLabel;
     }
 }
 

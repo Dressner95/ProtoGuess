@@ -12,7 +12,7 @@ using System.Diagnostics;
 
 namespace ProtoGuess
 {
-    public partial class Form1 : Form
+    public partial class ProtoGuess : Form
     {
         private SerialPort portToUse;
         Dictionary<string, float> ESP01 = new Dictionary<string, float>();
@@ -28,7 +28,7 @@ namespace ProtoGuess
         string ESP04Guess = "";
 
 
-        public Form1()
+        public ProtoGuess()
         {
             InitializeComponent();
             ESP01.Add("Chairs",0);
@@ -185,7 +185,7 @@ namespace ProtoGuess
 
                 case "ESP04":
                     ESP04Guess = closestMatch(ESP04, float.Parse(splitData[1]));
-                    esp04GuessText.Invoke(new MethodInvoker(delegate { esp04GuessText.Text = ESP01Guess; }));
+                    esp04GuessLabel.Invoke(new MethodInvoker(delegate { esp04GuessLabel.Text = ESP01Guess; }));
                     break;
             }
 
@@ -224,7 +224,7 @@ namespace ProtoGuess
             esp01GuessText.Invoke(new MethodInvoker(delegate { esp01GuessText.Text = ""; }));
             esp02GuessText.Invoke(new MethodInvoker(delegate { esp02GuessText.Text = ""; }));
             esp03GuessText.Invoke(new MethodInvoker(delegate { esp03GuessText.Text = ""; }));
-            esp04GuessText.Invoke(new MethodInvoker(delegate { esp04GuessText.Text = ""; }));
+            esp04GuessLabel.Invoke(new MethodInvoker(delegate { esp04GuessLabel.Text = ""; }));
 
 
         }
